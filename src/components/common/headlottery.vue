@@ -22,7 +22,7 @@
         <div class="hideNav">
             <ul>
                 <li v-for="(item,index) in filterLotteryData" :key="index">
-                    <router-link :to="{ name: 'detail', params: { lotteryId: item.id, lotteryLogo:item.logo || ''}}">{{item.lotteryName}}</router-link>
+                    <router-link :to="{ name: 'detail', params: { lotteryId: item.id}}">{{item.lotteryName}}</router-link>
                     <em v-if="index!=(filterLotteryData.length-1)">|</em>
                 </li>
             </ul>
