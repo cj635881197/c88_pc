@@ -81,11 +81,11 @@
           <a @click='openWin("/buyLottery")'>购彩大厅</a>
         </div>
         <div class="tz">
-          <img src="https://cpweb.kosunmobile.com/c9.kosungames.com/uploads/images/20161223/585cf6eda016f.png" width="32px" height="32px">
+          <img :src="lotteryLogo" width="32px" height="32px">
           <a @click='openWin("/buyLottery/bet"+lotteryNumber)'>投注{{lotteryName}}</a>
         </div>
         <div class="sc">
-          <a  @click="addCollection">收藏此页面，开奖即时查看</a>
+          <a @click="addCollection">收藏此页面，开奖即时查看</a>
         </div>
       </div>
     </div>
@@ -201,6 +201,9 @@ export default {
   computed: {
     lotteryNumber() {
       return this.$route.params.lotteryId;
+    },
+    lotteryLogo() {
+      return this.$route.params.lotteryLogo;
     }
   },
   components: {

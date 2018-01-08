@@ -106,7 +106,8 @@
                 <router-link to="/notice" :class='{active:this.$route.path=="/notice"?true:false}'>开奖公告</router-link>
             </li>
             <li>
-                <router-link to="/charts" :class='{active:this.$route.path=="/charts"?true:false}'>走势图表</router-link>
+                <!--<router-link to="/charts" :class='{active:this.$route.path=="/charts"?true:false}'>走势图表</router-link>-->
+                <router-link to="" :class='{active:this.$route.path=="/charts"?true:false}'>走势图表</router-link>
             </li>
         </ul>
       </div>

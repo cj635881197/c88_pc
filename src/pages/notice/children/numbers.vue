@@ -39,7 +39,7 @@
                             <td>{{item.dayIssue}}</td>
                             <td>{{item.runFrequency}}</td>
                             <td>
-                                <router-link class="xq" :to="{ name: 'detail', params: { lotteryId: item.lotteryNo }}">
+                                <router-link class="xq" :to="{ name: 'detail', params: { lotteryId: item.lotteryNo, lotteryLogo:item.lotteryLogo}}">
                                     <i class="iconfont icon-xiangqing"></i>
                                 </router-link>
                             </td>

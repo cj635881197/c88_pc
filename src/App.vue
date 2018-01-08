@@ -6,7 +6,7 @@
 <script>
 export default {
   destroyed(){
-    alert(1)
+    // alert(1)
   }
 }
 </script>

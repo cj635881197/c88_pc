@@ -13,8 +13,8 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false;
 Vue.prototype.md5 = md5;//md5加密
 Vue.prototype.$http = axios;
-Vue.prototype.$http.defaults.baseURL = 'http://103.230.242.79:9008';
-//Vue.prototype.$http.defaults.baseURL = 'http://192.168.0.197:9008';
+// Vue.prototype.$http.defaults.baseURL = 'http://103.230.242.79:9008';
+Vue.prototype.$http.defaults.baseURL = 'http://192.168.0.197:9008';
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

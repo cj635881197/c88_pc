@@ -149,7 +149,7 @@
             <div style="flex:3">{{item.orderId}}</div>
             <div style="flex:1.5">{{item.settingType|filterSettingType}}</div>
             <div style="flex:1.5">{{item.amount|filterNumber}}</div>
-            <div style="flex:1.5">{{item.discountAmount|filterNumber}}</div>
+            <div style="flex:1.5">{{item.discountAmount}}</div>
             <div style="flex:3">{{item.createTime|filterCreateTime}}</div>
             <div style="flex:1">{{item.status|filterStatus}}</div>
           </div>
